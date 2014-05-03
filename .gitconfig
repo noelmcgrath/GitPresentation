@@ -1,0 +1,11 @@
+[user]
+	name = nmcgrath
+	email = noel.mcgrath@gmail.com
+[diff]
+	tool = beyondcompare
+[difftool "beyondcompare"]
+	cmd = \"C:\\Program Files (x86)\\Beyond Compare 2/bc2.exe\" \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[push]
+	default = simple
