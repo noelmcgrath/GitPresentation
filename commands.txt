@@ -1,4 +1,8 @@
 
+================
+First repo
+================
+
 git config --list
 git config --global --list
 git config --global user.name "nmcgrath"
@@ -55,7 +59,16 @@ np .gitignore
 summary
 
 
+=============
 Remote
+=============
+//git protocols 
+http(s)		80 443	firewall friendly  password for auth
+git  		9418 	need firewall rule to open port
+ssh 		22 		ssh keys for auth
+file		n\a	
+
+// clone github example
 cd D:\Temp\GitInv
 git clone https://github.com/NancyFx/Nancy.git
 git log --oneline
@@ -66,33 +79,68 @@ git shortlog -sn
 show git graphs in github
 git show sha
 
+//create github repo
+cd D:\Temp\GitInv\firstrepo
 git remote
 git remote -v
 can add multiple remotes to repository - used for doing pull requests
 git remote add origin https://github.com/noelmcgrath/firstrepo.git
+git remote add origin git@github.com:noelmcgrath/firstrepo.git
 
-git protocols 
-http(s)		80 443	firewall friendly  password for auth
-git  		9418 	need firewall rule to open port
-ssh 		22 		ssh keys for auth
-file		n\a		
+//
+cd D:\Temp\GitInv
+mkdir secondrepo
+git clone https://github.com/noelmcgrath/firstrepo.git
+// make change and push
+git push --set-upstream origin master
+git push --set-upstream master origin/master
+
+// fetch and merge
+cd D:\Temp\GitInv\firstrepo
+git fetch origin master
+git log -2
+git log -2 origin master
+git diff origin master
+git merge origin master
+
+// tags
+git tag
+git tag v1.0
+
+summary
 
 
+=============
+ branching, merging and rebase
+==============
 np .\.git\config
 git branch
 git branch -r
-git tag
+git branch featurex
 
 
 
 
+============
+Notes
+============
+White board and marker
+Email billy to mary
+Me to email mary on room, numbers, audience, and my agenda.
+Slide on resources, presentations etc
+Slide on what not covered
+Gitk & git gui
+Git integration
+What will not cover
+TODO – install git
+Gitignore and gitattributes files
 
 
 
 
-
-
-=====================
+============
+Integration
+============
 Visual Studio Tools for Git 
 http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c
 Git Extensions - Windows and Visual Studio
