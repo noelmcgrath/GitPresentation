@@ -125,12 +125,8 @@ git branch featurex
 Notes
 ============
 White board and marker
-Email billy to mary
-Me to email mary on room, numbers, audience, and my agenda.
 Slide on resources, presentations etc
 Slide on what not covered
-Gitk & git gui
-Git integration
 What will not cover
 TODO – install git
 Gitignore and gitattributes files
