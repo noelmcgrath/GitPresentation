@@ -1,6 +1,6 @@
 [user]
-	name = nmcgrath
-	email = noel.mcgrath@gmail.com
+	name = somename
+	email = somename@gmail.com
 [diff]
 	tool = beyondcompare
 [difftool "beyondcompare"]

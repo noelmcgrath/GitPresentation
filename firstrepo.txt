@@ -1,0 +1,68 @@
+
+// git config
+git config --list
+git config --global --list
+git config --global user.name "nmcgrath"
+
+cd D:\Temp\GitInv
+mkdir firstrepo
+cd firstrepo
+git init
+tree .git
+
+np readme.txt
+git status
+git add .
+git status
+git commit -m "First commit"
+git log
+git log --name-only
+git diff sha --name-only
+git diff HEAD~1..
+git commit -am "Another commit"
+
+make changes to more than one file
+np code.cs
+git add specific file
+git commit
+
+// Change last commit message
+git commit --amend -m "New commit message"
+
+removing and renaming 
+git rm code.cs
+or
+git add -A
+
+mv code.cs newcode.cs
+git add -A
+
+
+undoing changes
+git checkout .
+or 
+git reset HEAD
+
+git reset --soft Head~1
+	changes back in staging area
+	
+// remove untracked files
+// git clean -n dry run
+git clean -n
+git clean
+git clean -f
+
+.gitignore - build artifacts, binaries etc.
+mkdir ignorefolder
+np ignorefolder/file1.txt
+np .gitignore
+	/ignorefolder
+	
+	
+mkdir anotherdevelopermachine
+cd anotherdevelopermachine
+git clone D:\Temp\GitInv\firstrepo
+	
+summary
+
+
