@@ -1,0 +1,42 @@
+
+=============
+ branching, merging and rebase
+==============
+np .\.git\config
+git branch
+git branch -r
+git branch featurex
+
+
+
+
+============
+Notes
+============
+White board and marker
+Slide on resources, presentations etc
+Slide on what not covered
+What will not cover
+TODO – install git
+Gitignore and gitattributes files
+
+
+
+
+============
+Integration
+============
+Visual Studio Tools for Git 
+http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c
+Git Extensions - Windows and Visual Studio
+https://code.google.com/p/gitextensions/
+SourceTree  - Windows and Mac
+http://www.sourcetreeapp.com/
+EGit - Git plugin for Eclipse
+http://eclipse.org/egit/
+GitHub on Windows
+https://windows.github.com/
+
+
+
+

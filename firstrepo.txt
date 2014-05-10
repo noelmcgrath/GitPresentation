@@ -64,5 +64,3 @@ cd anotherdevelopermachine
 git clone D:\Temp\GitInv\firstrepo
 	
 summary
-
-
