@@ -4,7 +4,7 @@ git config --list
 git config --global --list
 git config --global user.name "nmcgrath"
 
-cd D:\Temp\GitInv
+cd D:\Temp\GitInv\FirstRepoDemo
 mkdir firstrepo
 cd firstrepo
 git init
@@ -61,6 +61,6 @@ np .gitignore
 	
 mkdir anotherdevelopermachine
 cd anotherdevelopermachine
-git clone D:\Temp\GitInv\firstrepo
+git clone D:\Temp\GitInv\FirstRepoDemo\firstrepo
 	
 summary
