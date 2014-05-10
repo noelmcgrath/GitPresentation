@@ -46,11 +46,16 @@ git stash list
 git rebase master
 
 
+// remote branch
+cd D:\Temp\GitInv\RemoteRepoDemo\firstremoterepo
+git checkout -b remotebranch
+git push origin remotebranch
 
+// delete remote branch
+ git push origin --delete remotebranch
 
-
-su .\.git\config
-git log --graph --oneline --decorate
+ // delete local branch
+git branch -D remotebranch
 
 
 

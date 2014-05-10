@@ -10,7 +10,7 @@ cd firstrepo
 git init
 tree .git
 
-np readme.txt
+su readme.txt
 git status
 git add .
 git status
@@ -22,7 +22,7 @@ git diff HEAD~1..
 git commit -am "Another commit"
 
 make changes to more than one file
-np code.cs
+su code.cs
 git add specific file
 git commit
 
@@ -54,8 +54,8 @@ git clean -f
 
 .gitignore - build artifacts, binaries etc.
 mkdir ignorefolder
-np ignorefolder/file1.txt
-np .gitignore
+myDiceAppignorefolder/file1.txt
+su .gitignore
 	/ignorefolder
 	
 	
