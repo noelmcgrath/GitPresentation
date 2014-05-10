@@ -2,10 +2,58 @@
 =============
  branching, merging and rebase
 ==============
-np .\.git\config
+cd D:\Temp\GitInv\BranchingAndMerging
+mkdir testrepo
+mkdir anothermachine
+cd testrepo
+git init
+cd D:\Temp\GitInv\BranchingAndMerging\anothermachine
+git clone D:\Temp\GitInv\BranchingAndMerging\testrepo
+cd D:\Temp\GitInv\BranchingAndMerging\testrepo
+
+
+Add a file and commit
+
 git branch
 git branch -r
-git branch featurex
+git branch feature1
+or 
+git checkout -b feature2
+su .\.git\config
+git log --graph --oneline --decorate
+//Update file commit  and switch to master
+git merge feature2
+git branch -D feature2
+git checkout -b feature3
+// Make changes on feature and master
+// Try to merge - conflicts
+
+// changes added to staging
+ git difftool --cached
+
+// See history of where HEAD has pointed to
+git reflog
+
+// stash
+git stash
+git stash apply
+git stash list
+
+//rebasing -alternate to merge
+// create branch and commit
+// checkout master and commit
+// checkout branch and rebase
+git rebase master
+
+
+
+
+
+su .\.git\config
+git log --graph --oneline --decorate
+
+
+
 
 
 
